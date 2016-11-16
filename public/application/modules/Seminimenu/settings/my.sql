@@ -1,0 +1,1 @@
+INSERT IGNORE INTO `engine4_core_modules` (`name`, `title`, `description`, `version`, `enabled`, `type`) VALUES  ('seminimenu', 'Social Engine Mini Menu', 'Social Engine Mini Menu', '4.0.1', 1, 'extra') ;

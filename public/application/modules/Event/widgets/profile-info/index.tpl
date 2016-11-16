@@ -1,0 +1,109 @@
+<?php
+/**
+ * SocialEngine
+ *
+ * @category   Application_Extensions
+ * @package    Event
+ * @copyright  Copyright 2006-2010 Webligo Developments
+ * @license    http://www.socialengine.com/license/
+ * @version    $Id: index.tpl 9987 2013-03-20 00:58:10Z john $
+ * @author     Sami
+ */
+?>
+
+<h3>
+  <?php echo $this->translate('Event Details') ?>
+</h3>
+<div id='event_stats'>
+  <ul>
+    <?php if( !empty($this->subject->description) ): ?>
+    <li>
+      <?php echo nl2br($this->subject->description) ?>
+    </li>
+    <?php endif ?>
+    <li class="event_date">
+      <?php
+        // Convert the dates for the viewer
+        $startDateObject = new Zend_Date(strtotime($this->subject->starttime));
+        $endDateObject = new Zend_Date(strtotime($this->subject->endtime));
+        if( $this->viewer() && $this->viewer()->getIdentity() ) {
+          $tz = $this->viewer()->timezone;
+          $startDateObject->setTimezone($tz);
+          $endDateObject->setTimezone($tz);
+        }
+      ?>
+		<div>
+			<span class="event_startdate inline_block">
+				<?php echo $this->translate('%1$s at %2$s',
+					$this->locale()->toDate($startDateObject),
+					$this->locale()->toTime($startDateObject)
+				  ) ?>
+			</span>
+				 - 
+			<span class="event_enddate inline_block">
+				<?php echo $this->translate('%1$s at %2$s',
+					$this->locale()->toDate($endDateObject),
+					$this->locale()->toTime($endDateObject)
+				  ) ?>
+			</span>
+		</div>
+    </li>
+    <li>
+	<?php if( !empty($this->subject->location) ): ?>
+		<span class="event_location inline_block">
+			<?php echo $this->htmlLink('http://maps.google.com/?q='.urlencode($this->subject->location), $this->subject->location, array('target' => 'blank')) ?>
+		</span>
+	<?php endif; ?>
+	<?php if( !empty($this->subject->destination) ): ?>
+		 - 
+		<span class="event_destination inline_block">
+			<?php echo $this->htmlLink('http://maps.google.com/?q='.urlencode($this->subject->destination), $this->subject->destination, array('target' => 'blank')) ?>
+		</span>
+	<?php endif; ?>
+	</li>
+    
+    <li>
+        <span><strong><?php echo $this->translate('Led by') ?></strong>: <?php echo $this->subject->getParent()->__toString() ?></span>
+    </li>
+    <?php if( !empty($this->subject->category_id) ): ?>
+    <li>
+      <div class="label"><?php echo $this->translate('Category')?></div>
+      <div class="event_stats_content">
+        <?php echo $this->htmlLink(array(
+          'route' => 'event_general',
+          'action' => 'browse',
+          'category_id' => $this->subject->category_id,
+        ), $this->translate((string)$this->subject->categoryName())) ?>
+      </div>
+    </li>
+    <?php endif ?>
+  
+    <li class="event_stats_info">
+      <div><strong><?php echo $this->translate('RSVPs');?></strong></div>
+      <div>
+        <ul>
+          <li>
+            <?php echo $this->locale()->toNumber($this->subject->getAttendingCount()) ?>
+            <span><?php echo $this->translate('attending');?></span>
+          </li>
+          <li>
+            <?php echo $this->locale()->toNumber($this->subject->getMaybeCount()) ?>
+            <span><?php echo $this->translate('maybe attending');?></span>
+          </li>
+          <li>
+            <?php echo $this->locale()->toNumber($this->subject->getNotAttendingCount()) ?>
+            <span><?php echo $this->translate('not attending');?></span>
+          </li>
+          <li>
+            <?php echo $this->locale()->toNumber($this->subject->getAwaitingReplyCount()) ?>
+            <span><?php echo $this->translate('awaiting reply');?></span>
+          </li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<script type="text/javascript">
+  $$('.core_main_event').getParent().addClass('active');
+</script>

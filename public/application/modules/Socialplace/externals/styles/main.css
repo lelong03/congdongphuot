@@ -1,0 +1,415 @@
+#socialplace-browse-listings .socialplace-place-item{
+	padding: 1.5em 0;
+	border-bottom: 1px solid #eaeaea;
+}
+
+#socialplace-browse-listings .socialplace-place-item-image {
+	border: 0;
+	width: 160px;
+	height: 160px;
+	-webkit-border-radius: 80px;
+	-moz-border-radius: 80px;
+	border-radius: 80px;
+	background-position: center center !important;
+	background-size: cover !important;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+.socialplace-most-item-image {
+    border: 0;
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    border-radius: 40px;
+    background-position: center center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.socialplace-most-item-content {
+    min-height: 80px;
+    overflow: hidden;
+    padding-left: 7px;
+}
+
+.socialplace-place-item-distance,
+.socialplace-place-item-owner,
+.socialplace-place-item-likecount
+{
+    font-size: 9pt;
+}
+
+#socialplace-browse-listings  .socialplace-place-item-content{
+	overflow: hidden;
+	padding-left: 15px;
+}
+
+.socialplace-clearfix:after
+{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+
+.socialplace-mode-view {
+    float: right;
+    span {
+        display: block;
+        float: left;
+        width: 28px;
+        height: 28px;
+        cursor: pointer;
+        background-image: url(~/application/modules/Socialplace/externals/images/icon-viewmode.png);
+        background-repeat: no-repeat;
+
+    }
+}
+
+.socialplace-mode-view .socialplace-viewmode-list {
+    background-position: 0 0;
+}
+
+.socialplace-mode-view .socialplace-viewmode-maps {
+    background-position: -81px 0;
+}
+
+.socialplace-browse-place-viewmode-list {
+    .socialplace-viewmode-list {
+        background-position: 0 -27px;
+    }
+}
+
+.socialplace-browse-place-viewmode-maps {
+    .socialplace-viewmode-maps {
+        background-position: -81px -27px;
+    }
+}
+
+.socialplace-browse-place-viewmode-list{
+    .socialplace-browse-place-items {
+        display: block;
+    }
+    .socialplace-browse-place-maps {
+        display: none;
+    }
+}
+
+.socialplace-browse-place-viewmode-maps {
+    .socialplace-browse-place-items {
+        display: none;
+    }
+
+    .socialplace-browse-place-maps {
+        display: block;
+    }
+}
+.icon_socialplace_photo_new
+{
+    background-image: url(~/application/modules/Socialplace/externals/images/photo/upload.png);
+}
+.icon_socialplace_photo_view
+{
+    background-image: url(~/application/modules/Socialplace/externals/images/photo/view.png);
+}
+.places_browse
+{
+    clear: both;
+}
+ul.places_browse>li {
+    clear: both;
+    padding: 10px 0 8px 0;
+    height: 99px;
+    border-bottom: 1px solid #DDD;
+}
+ul.places_browse > li .places_browse_photo {
+    float: left;
+    overflow: hidden;
+    margin-right: 8px;
+}
+.places_browse_photo img
+{
+    width: 140px;
+    height: 93px;
+}
+ul.places_browse > li .places_browse_options {
+    float: right;
+    overflow: hidden;
+    padding-left: 20px;
+}
+ul.places_browse > li .places_browse_info {
+    overflow: hidden;
+}
+ul.places_browse > li .places_browse_info_title {
+    font-weight: 700;
+}
+ul.places_browse > li .places_browse_info_date {
+    font-size: .8em;
+    color: #999;
+}
+ul.places_browse > li .places_browse_info_blurb {
+    margin-top: 5px;
+}
+.layout_place_browse_search
+{
+	margin-bottom: 15px;
+	border: 1px solid rgba(0,0,0,.12);
+	padding: 1.5em;
+}
+
+
+/*
+VIEW SOCIALPLACE ALBUM
+Styles for the list event photo page.
+*/
+.event_album_options a
+{
+    margin-right: 15px;
+}
+html[dir="rtl"] .event_album_options a
+{
+    margin-right: 0px;
+    margin-left: 15px;
+}
+
+
+
+
+
+
+/*
+VIEW SOCIALPLACE PHOTO
+These styles are used on the view photo page within
+an album.
+*/
+div.socialplace_photo_view
+{
+    margin: 25px auto 0px auto;
+    max-width: 750px;
+    min-width: 400px;
+    overflow: visible;
+}
+div.socialplace_photo_view #media_photo
+{
+    border: 1px solid $theme_photo_border_color;
+    margin: auto;
+    display: block;
+    max-width: 720px;
+}
+div.socialplace_photo_view .socialplace_photo_nav
+{
+    clear: both;
+    overflow: visible;
+    margin-bottom: 4px;
+}
+div.socialplace_photo_view .socialplace_photo_nav > div
+{
+    float: left;
+    overflow: visible;
+}
+div.socialplace_photo_view .socialplace_photo_nav > div + div
+{
+    float: none;
+    text-align: right;
+}
+div.socialplace_photo_view .socialplace_photo_nav > div + div > a + a
+{
+    margin-left: 20px;
+}
+div.socialplace_photo_info
+{
++foreground;
++rounded;
+    text-align: center;
+    padding: 10px;
+    border: 5px solid $theme_foreground_border_color;
+}
+div.socialplace_photo_info p
+{
+    text-align: left;
+}
+div.socialplace_photo_container
+{
+    position: relative;
+    display: inline-block;
+}
+div.socialplace_photo_container a:link
+{
+    text-decoration: none;
+}
+div.socialplace_photo_view > span + div > a
+{
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+div.socialplace_photo_view > span + div > a:link
+{
+    display: block;
+    margin-bottom: 5px;
+    text-align: center;
+}
+div.socialplace_photo_info .socialplace_photo_title
+{
+    margin-top: 5px;
+    font-weight: bold;
+}
+div.socialplace_photo_info .socialplace_photo_description
+{
+    font-size: .8em;
+    margin-top: 3px;
+}
+div.socialplace_photo_info .socialplace_photo_owner
+{
+    font-size: .8em;
+    margin-top: 3px;
+}
+div.socialplace_photo_info .socialplace_photo_title + .socialplace_photo_tags,
+div.socialplace_photo_info .socialplace_photo_description + .socialplace_photo_tags
+{
+    margin-top: 15px;
+}
+div.socialplace_photo_info .socialplace_photo_tags
+{
+    font-size: .8em;
+    margin-top: 5px;
+}
+div.socialplace_photo_info .socialplace_photo_date
+{
+    font-size: .8em;
+    margin-top: 5px;
+}
+div.socialplace_photo_view > div.comments
+{
+    margin-top: 15px;
+}
+
+
+/*rating*/
+.socialplace_rating_star_generic {
+    float: left;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    font-size: 1px;
+}
+.socialplace-review-item-rating {
+    height: 22px;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+.socialplace_icon
+{
+    background-repeat: no-repeat;
+    padding-left: 23px;
+    line-height: 23px;
+}
+.socialplace-place-item-location
+{
+    background-image: url(~/application/modules/Socialplace/externals/images/location.png);
+}
+.socialplace-place-item-phone
+{
+    background-image: url(~/application/modules/Socialplace/externals/images/phone.png);
+}
+.socialplace-place-item-description
+{
+    background-image: url(~/application/modules/Socialplace/externals/images/info.png);
+}
+.socialplace-place-item-price
+{
+    background-image: url(~/application/modules/Socialplace/externals/images/money.png);
+}
+.socialplace-place-item-map
+{
+    background-image: url(~/application/modules/Socialplace/externals/images/pin16.png);
+}
+.get_current_position
+{
+    margin-top: 7px;
+}
+span#socialplace_location_direction_close_btn
+{
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+.socialplace-place-item-map-green
+{
+    background-image: url(~/application/modules/Socialplace/externals/images/pin16-green.png);
+}
+.socialplace-place-item-direction
+{
+    background-image: url(~/application/modules/Socialplace/externals/images/compass.png);
+    font-weight: bold;
+    line-height: 21px;
+}
+.socialplace_widget_location_direction
+{
+    margin-top: 15px;
+}
+
+div.layout_page_socialplace_index_browse div.layout_right
+{
+    width: 260px !important;
+}
+#place_filter_form input[type=text], #place_filter_form select
+{
+    width: 100%;
+}
+#place_filter_form input#location
+{
+    width: 100%;
+}
+.layout_page_socialplace_index_create form#places_create input[type=text]
+{
+    width: 300px;
+}
+
+/*CSS for featured regions*/
+div.social-place-featured-region > div.wrapper
+{
+    float: left;
+    width: 33.33%;
+    min-width: 180px;
+}
+div.social-place-featured-region > div.wrapper > div
+{
+    position: relative;
+    margin: 10px;
+    border: 1px solid #cfd8dc;
+    padding: 2px 2px 10px;
+    background: #ffffff;
+}
+div.social-place-featured-region a.photo
+{
+  width: auto;
+  height: 100px;
+  margin: 0 0 10px;
+  padding: 0;
+  border: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover !important;
+  display: block;
+}
+
+div.social-place-featured-region span.region-title
+{
+    margin-left: 3px;
+}
+
+div.social-place-featured-region span.region-hotel-count
+{
+  float: right;
+  clear: both;
+  margin-right: 3px;
+}

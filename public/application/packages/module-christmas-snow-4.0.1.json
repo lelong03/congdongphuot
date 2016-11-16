@@ -1,0 +1,346 @@
+{
+  "type": "module",
+  "name": "christmas-snow",
+  "version": "4.0.1",
+  "revision": null,
+  "path": "application\/modules\/ChristmasSnow",
+  "repository": null,
+  "date": "Fri, 08 Aug 2014 10:58:31 +0000",
+  "title": "Christmas Snow",
+  "description": "Christmas Snow",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Tracy Dev"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Fri, 08 Aug 2014 10:58:31 +0000",
+    "title": "Christmas Snow",
+    "description": "Christmas Snow",
+    "developer": null,
+    "authors": [
+      "Tracy Dev"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Module",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/ChristmasSnow": {
+      "type": "directory",
+      "path": "application\/modules\/ChristmasSnow",
+      "structure": [
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 367,
+          "sha1": "e5ed6c599f1423ed13d3da28cbb2224b3ab50ead"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2162,
+          "sha1": "e6149ddad5967e8a8878ef77e538ab1015f57946"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 130,
+          "sha1": "a2d40915dc9c55ce00681e28de0cbb82f8cdbe8b"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/scripts\/jscolor.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 26943,
+          "sha1": "fcbfc649d79a3024161c07dfcb98b21e0ee077ba"
+        },
+        {
+          "path": "externals\/scripts\/snowfall.js",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 17242,
+          "sha1": "fcc8e7871d1ff3bcc8025fb68043862b4aee04da"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 66,
+          "sha1": "d9c798b909250987e8f2f2153058a8da7a37fc0d"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Form\/Setting.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1939,
+          "sha1": "d18f99cf0398cd4275d74e8849b5a04f521448c6"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 241,
+          "sha1": "e034fd173f43bee63c03f37990d1f776a9b0259a"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 709,
+          "sha1": "aaa2c4fac062ffd46f2dc772b5d7716864e53d7d"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 518,
+          "sha1": "b91c2d3b66c82ba2ae0652997979ea68b5f2b098"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 110,
+          "sha1": "e9079f9e3530b473db42024280d3c5a94c40e91d"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 86,
+          "sha1": "c3db05f5a08a991686c07650a644ced64b9be02f"
+        },
+        {
+          "path": "views\/scripts\/_FancyUpload.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 12315,
+          "sha1": "1c6d04e53cebd11516abc3436fa893f19fd0cdcf"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/snow-storm",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/snow-storm\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1123,
+          "sha1": "4ea28a44ab974c4e7690654806d09b77a6816010"
+        },
+        {
+          "path": "widgets\/snow-storm\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 595,
+          "sha1": "45f90c6b4572d05cb0f60776ec720794a679406b"
+        }
+      ]
+    },
+    "application\/languages\/en\/christmas-snow.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/christmas-snow.csv",
+      "structure": {
+        "path": "christmas-snow.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 0,
+        "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      }
+    }
+  }
+}

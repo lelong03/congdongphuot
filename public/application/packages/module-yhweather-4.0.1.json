@@ -1,0 +1,850 @@
+{
+  "type": "module",
+  "name": "yhweather",
+  "version": "4.0.1",
+  "revision": null,
+  "path": "application\/modules\/Yhweather",
+  "repository": null,
+  "date": "Sun, 25 Jan 2015 09:26:08 +0000",
+  "title": "Yahoo Weather",
+  "description": "Yahoo Weather",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Tracy Dev"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Sun, 25 Jan 2015 09:26:08 +0000",
+    "title": "Yahoo Weather",
+    "description": "Yahoo Weather",
+    "developer": null,
+    "authors": [
+      "Tracy Dev"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": "application\/modules\/Yhweather\/settings\/install.php",
+    "class": "Yhweather_Installer",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Yhweather": {
+      "type": "directory",
+      "path": "application\/modules\/Yhweather",
+      "structure": [
+        {
+          "path": ".DS_Store",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8196,
+          "sha1": "858b43b8e09a3959290a8158453f7cb0bbf90d97"
+        },
+        {
+          "path": "Api",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Api\/Core.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 9366,
+          "sha1": "f6b2ea8377ed61e64d8ddca2a09e75b465363b19"
+        },
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 88,
+          "sha1": "0b6b7a1607eba68a651662257c0a010bcc4235d5"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminSettingsController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1047,
+          "sha1": "9422302de6acd0f660e9ee72df38c28505af68cc"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2059,
+          "sha1": "31f6325854b6ee6aceed2d57f4826c3c6fd92f05"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 238,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.DS_Store",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 8196,
+          "sha1": "7bc719813a544911470a112cb2703cb08902520f"
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 272,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/images\/_loading.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1900,
+          "sha1": "aa3f96acd9c49265c63a5ff449a97766c0d7b07d"
+        },
+        {
+          "path": "externals\/images\/faq1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 37415,
+          "sha1": "ab8caa47b542b824eaa71669432c32f18de4bbfe"
+        },
+        {
+          "path": "externals\/images\/humidity.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3513,
+          "sha1": "7a3762211900e671a0b13d21c41f1ac1c68df150"
+        },
+        {
+          "path": "externals\/images\/wind.png",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2150,
+          "sha1": "7a78d0a47f589f65df36fabf97d73576995e8d2c"
+        },
+        {
+          "path": "externals\/images\/yahoo_code",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 1700,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/0.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2013,
+          "sha1": "45fb43f2b39bb1e6c31672b25c5fea7df6552b42"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/1.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1833,
+          "sha1": "4811e6a36463a774af1de685c2b51c84cd214cdb"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/10.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1842,
+          "sha1": "e1be68156b67a8ebcdee4e6c40cb1fbc9a5122c0"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/11.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1776,
+          "sha1": "a79ae9bf1956086b24769c7e7c6183464c72819b"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/12.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1780,
+          "sha1": "7f3b59e1760a9700b3c472093ead2c39d72e8df3"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/13.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1108,
+          "sha1": "c4bd331150f49a3b87aeaa99055e172bc2f571c9"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/14.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1259,
+          "sha1": "45dc22a4fb52199d8180f4a76600e1d4026fc042"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/15.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 704,
+          "sha1": "686873511cae879b4fec67db71292ad761b7a1be"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/16.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1357,
+          "sha1": "99e1d6cc27e9658e374cc075db0da5b4aa1c6bd2"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/17.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2013,
+          "sha1": "45fb43f2b39bb1e6c31672b25c5fea7df6552b42"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/18.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1824,
+          "sha1": "370ef9142b241c9d08857c2eca73f0a1c7678361"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/19.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1555,
+          "sha1": "88067355bc6e464602786ea2457c4df270a5c0bd"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/2.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1833,
+          "sha1": "4811e6a36463a774af1de685c2b51c84cd214cdb"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/20.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 934,
+          "sha1": "c3b25b9ad8c8931b6f780b77760af67b48de7d0f"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/21.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1623,
+          "sha1": "3d0834942ab87d9eed9db3c81a1aafd85d319def"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/22.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1200,
+          "sha1": "7f9d6750296117b9306015a9366dd82f14d7f7e0"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/23.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 741,
+          "sha1": "c2f088dfe2276ee672a72c68f00d1c8b16a4e6a2"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/24.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 741,
+          "sha1": "c2f088dfe2276ee672a72c68f00d1c8b16a4e6a2"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/25.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1579,
+          "sha1": "0a17c6c238c7509640e1115366420617e6f0a835"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/26.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1633,
+          "sha1": "b01cd4481ee6b3f00dca2818ec04a0e370acc1c8"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/27.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2001,
+          "sha1": "c4ba24bbb168fc7ca03132a319198b95ac603d16"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/28.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1872,
+          "sha1": "abbeaec6d02d5af416745eb9f03c84a6413ce191"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/29.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1716,
+          "sha1": "ddcae83ceea79d0311c393433a1db59cafcff7aa"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/3.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2013,
+          "sha1": "45fb43f2b39bb1e6c31672b25c5fea7df6552b42"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/30.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1788,
+          "sha1": "949caf73db2107eff718562d82d8cccfc5ae370d"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/31.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1435,
+          "sha1": "5bf6512b109778e17aed996cc959aaaf50613e81"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/32.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1725,
+          "sha1": "d31626cb298803e70de74137c12b3b04f6a6bd72"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/33.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1448,
+          "sha1": "f4e465dad8c4af87d6d845d4fb66538d06b776bc"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/34.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1720,
+          "sha1": "9cf1406057d0c970a6a842ed7f550f93f688937a"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/35.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2013,
+          "sha1": "45fb43f2b39bb1e6c31672b25c5fea7df6552b42"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/36.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1713,
+          "sha1": "240901da9afa84217f59682fbab930c281fa0143"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/37.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1765,
+          "sha1": "abc74d39624753ec197d3aecba1304d1c88f1d55"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/38.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1765,
+          "sha1": "abc74d39624753ec197d3aecba1304d1c88f1d55"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/39.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1780,
+          "sha1": "7f3b59e1760a9700b3c472093ead2c39d72e8df3"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/4.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2013,
+          "sha1": "45fb43f2b39bb1e6c31672b25c5fea7df6552b42"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/40.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1780,
+          "sha1": "7f3b59e1760a9700b3c472093ead2c39d72e8df3"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/41.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1357,
+          "sha1": "99e1d6cc27e9658e374cc075db0da5b4aa1c6bd2"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/42.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1357,
+          "sha1": "99e1d6cc27e9658e374cc075db0da5b4aa1c6bd2"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/43.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1884,
+          "sha1": "de9c6a83d8392ec35bf992da4ebd5fb254e58e83"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/44.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1788,
+          "sha1": "949caf73db2107eff718562d82d8cccfc5ae370d"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/45.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2022,
+          "sha1": "0d4a034f9e010e9a4663adf7037cdfc6f6d4f59b"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/46.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1994,
+          "sha1": "499c4bedd3d4160bc2827184d384f3e768bc33c1"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/47.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2027,
+          "sha1": "7d6c9a412e5d215accac9522011a27852d6ed405"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/5.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1798,
+          "sha1": "8fb18d34ae953ac6699b7d50b093b0ad1da1a5db"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/6.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1824,
+          "sha1": "370ef9142b241c9d08857c2eca73f0a1c7678361"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/7.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1876,
+          "sha1": "a4ccb2a0eff365e2df7cb2f95447673a420524aa"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/8.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1575,
+          "sha1": "4d3e35d508ef538edf837ac1a6d4a7a4a2d189be"
+        },
+        {
+          "path": "externals\/images\/yahoo_code\/9.gif",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1116,
+          "sha1": "7edaa11e5496678c4789c919a9abd550be95023a"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3729,
+          "sha1": "5b19a888b717cc7fdc9bae163b32af9ca83bf68b"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Form\/Admin",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "Form\/Admin\/Global.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1139,
+          "sha1": "acb3e6738a1c361a1d8891c74cbb51a32da97692"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Model\/DbTable\/Locations.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 540,
+          "sha1": "9863357f1bc8b5f2ef2fa81f3af8b65489192919"
+        },
+        {
+          "path": "Model\/Location.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 78,
+          "sha1": "3d914d6c5a500386820bb891c2127bf864ad2735"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 238,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 736,
+          "sha1": "2524410566d985b2d1276ba8f8208f78d5caf8d5"
+        },
+        {
+          "path": "settings\/install.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 148,
+          "sha1": "aebb221d6d7d9ffce794124f010aef42bff9838f"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 755,
+          "sha1": "20d7e3cc087797111abc3ae249a7c4b3ae0494e2"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 1169,
+          "sha1": "0d85e247331746ea17d45a171ed5d1a6bb1f5589"
+        },
+        {
+          "path": "settings\/widgets.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 308,
+          "sha1": "253a2d27cce0ecb9b258503918c37905491066cb"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 170,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/_weather.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 4169,
+          "sha1": "5c9577b0efc1bfd8121011dd401e102ad3546019"
+        },
+        {
+          "path": "views\/scripts\/admin-settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-settings\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 311,
+          "sha1": "7d0863dae00471ac39ef616de304d7336d3814b0"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 102,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/weather",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/weather\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3097,
+          "sha1": "431174ce99af5567037d6652359a1c8beb3d36da"
+        },
+        {
+          "path": "widgets\/weather\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 2862,
+          "sha1": "a631dbc384c8864075c735a30f7011cd38ce9cdb"
+        },
+        {
+          "path": "widgets\/weather-wide",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 136,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/weather-wide\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 3101,
+          "sha1": "adec514231f2f07e2511690bac5056191a3401f5"
+        },
+        {
+          "path": "widgets\/weather-wide\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0777",
+          "size": 7694,
+          "sha1": "41d6cf36b0dad9e8187f5063d2c586e8de47e011"
+        }
+      ]
+    },
+    "application\/languages\/en\/yhweather.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/yhweather.csv",
+      "structure": {
+        "path": "yhweather.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0777",
+        "size": 4368,
+        "sha1": "94efb558b1bea394bfd242715fccdcc0d1563a42"
+      }
+    }
+  }
+}

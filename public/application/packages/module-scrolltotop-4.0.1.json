@@ -1,0 +1,930 @@
+{
+  "type": "module",
+  "name": "scrolltotop",
+  "version": "4.0.1",
+  "revision": null,
+  "path": "application\/modules\/Scrolltotop",
+  "repository": null,
+  "date": "Thu, 14 Aug 2014 09:06:35 +0000",
+  "title": "Scroll To Top",
+  "description": "Scroll To Top module",
+  "thumb": null,
+  "developer": null,
+  "authors": [
+    "Tracy Dev"
+  ],
+  "changeLog": null,
+  "meta": {
+    "date": "Thu, 14 Aug 2014 09:06:35 +0000",
+    "title": "Scroll To Top",
+    "description": "Scroll To Top module",
+    "developer": null,
+    "authors": [
+      "Tracy Dev"
+    ],
+    "changeLog": null
+  },
+  "actions": [
+    "install",
+    "upgrade",
+    "refresh",
+    "enable",
+    "disable"
+  ],
+  "callback": {
+    "path": null,
+    "class": "Engine_Package_Installer_Module",
+    "priority": 100
+  },
+  "dependencies": null,
+  "tests": [
+    
+  ],
+  "permissions": [
+    
+  ],
+  "structure": {
+    "application\/modules\/Scrolltotop": {
+      "type": "directory",
+      "path": "application\/modules\/Scrolltotop",
+      "structure": [
+        {
+          "path": "Bootstrap.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 90,
+          "sha1": "0dafdc30adcf52da1369f260190221f8bf442dee"
+        },
+        {
+          "path": "controllers",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "controllers\/AdminManageController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 538,
+          "sha1": "40948c5c92485bbbcbd49da77c5425702106dd9e"
+        },
+        {
+          "path": "controllers\/IndexController.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 172,
+          "sha1": "e406942918fe2ec9e35e1db80d44f54af42d1fcf"
+        },
+        {
+          "path": "externals",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/.htaccess",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 147,
+          "sha1": "9f1638a8edbe1c5d28789e017fb35b2f2465f01e"
+        },
+        {
+          "path": "externals\/images",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 4096,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/aaaa",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/aaaa\/arrow (1).png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 958,
+          "sha1": "8ce4906abbc69e6a0468ad1257e3d46c19fd0a1f"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 40960,
+          "sha1": null
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow0.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5317,
+          "sha1": "6b18fb1e986e6f364cdd2ce6ae221fd9d379dd6f"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow1.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2492,
+          "sha1": "9423b2f0865d9b60b665e948f88f9c6738bfb2b4"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow10.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1635,
+          "sha1": "d57baf406fcbb520eff6e3d2563546e35d5f97b9"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow11.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 341,
+          "sha1": "b3cf4fa8aca10ff4a4b833185d052d3527651980"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow12.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3568,
+          "sha1": "17def6892b1ab002f63905d8529caf4708b5ecdb"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow13.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1842,
+          "sha1": "cc31a0e8186cb7be09904b119f60c97c7ff1bf77"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow14.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1542,
+          "sha1": "358af018a378b9db156fe0f9007fd3f945477f26"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow15.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4834,
+          "sha1": "46bb065f92a52a82eebc435392c6c2669b20ecab"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow16.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1475,
+          "sha1": "6ca9b3f4a66b9f24c25c27af4191a3a764ef177d"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow17.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 958,
+          "sha1": "8ce4906abbc69e6a0468ad1257e3d46c19fd0a1f"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow18.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2070,
+          "sha1": "c4bf6debe805a905247387dea80570109e4f8019"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow19.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1638,
+          "sha1": "9be460f66dcb864679030af704b2e295d4550087"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow2.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3363,
+          "sha1": "63957f541d6921694d8987a88d14bc99c8eb4fe3"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow20.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 5233,
+          "sha1": "cfbd0a6839ff06b80bf14e582ce2822ba5a69e0a"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow21.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6446,
+          "sha1": "8b421702001496a58c406ae2bd1add47b7472e00"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow22.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2457,
+          "sha1": "0665294f6ffd7b5b75d225babea0ba554df92984"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow23.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2844,
+          "sha1": "bfbd96ef44a25486f89d2d1df9e8002fe22c1019"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow24.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3084,
+          "sha1": "5ddaea52d3c5d63eb641812e17fecba73aa5c560"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow25.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3272,
+          "sha1": "deeacdec1ee7f5cd34cdb0bd0a0e75a5c1ae30aa"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow26.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2513,
+          "sha1": "966c584dc081f1a4d0d6324ea2e29ab83672f32e"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow27.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1642,
+          "sha1": "70e14d0d03feaffca49a6a4360f8be38ab7b9a76"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow28.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4633,
+          "sha1": "8ffb425747cdf1b2ae5c35a6e26af2c7603e085b"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow29.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2894,
+          "sha1": "e15ada37add89c975272aa0ee98822dc305b5a2a"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow3.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 603,
+          "sha1": "c70f8c2689cd5a9d54621513bb3b8d4009eb6c0f"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow30.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2226,
+          "sha1": "8c0ffc20a2d5dc0bceb91b99a15faa648b8682f6"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow31.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3923,
+          "sha1": "d0fd4908fbc5e3f0cf8def17523ccccdf85557c2"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow32.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2231,
+          "sha1": "66813380b998654bbec9f944fadeacdde882bf3b"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow33.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4446,
+          "sha1": "db14c9f33697711e38d883a3765e18b1fdd19c92"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow34.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3081,
+          "sha1": "8513c889a67ebade6f9683c520bc147fb14d91e7"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow35.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6983,
+          "sha1": "2bb76e1a798fd7a7ef850c1c83e9e030ec8d91f3"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow36.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2932,
+          "sha1": "bc0b0c6d27988324855c95ee553653f1f676ccbb"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow37.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1755,
+          "sha1": "d82d8119c08de008b8880f90f78279eca77cb04d"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow38.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2223,
+          "sha1": "5ebdcdef9a3c17207023688876b401f1f5fabdd0"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow39.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3638,
+          "sha1": "2aba2ca51a20e3922bbc5c9e3cecafcf0b979333"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow4.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 8158,
+          "sha1": "c3785c24e5912f8973a6f23bdd60ec032986a4cf"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow40.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 804,
+          "sha1": "97a8bfc5a8a9a949c351d9dffa6ba15b3ff8faee"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow41.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2380,
+          "sha1": "0c04017c6395f868cae13d2847548060d1ef141d"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow42.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3127,
+          "sha1": "fd7850168b9645c51ff5f4f082a9235de68ed2be"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow43.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2325,
+          "sha1": "43cbc51ec01b92ebb9e17bb26ad67435fcf1c6d8"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow44.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 528,
+          "sha1": "81dfef33b5c82165aa80de8cf03799409765ea65"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow45.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2128,
+          "sha1": "c6df4a8893de7629538b618768dec1714191d7ff"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow46.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1678,
+          "sha1": "de67ef242bdf0e37f58383aac0771a2323fb6389"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow47.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 353,
+          "sha1": "d420a66c3aff0be3e61950e7b4e98b8ba5a54722"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow48.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 224,
+          "sha1": "0479d81783a4d9647dd99956b7d6edc5a912e87d"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow49.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1625,
+          "sha1": "eda68c8abada44984826e42c1993c235f453b851"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow5.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6172,
+          "sha1": "9e760e8c6813c66f7f31f839d366313baea0eda9"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow50.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3407,
+          "sha1": "07d9f18a6d8a26d660e8ae414a08eb0779f01134"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow51.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6020,
+          "sha1": "6ce8e1eb4eaca953d1a56a71af0b32c76e885288"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow52.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1368,
+          "sha1": "42ffcfa04d0cadfd2f9ea94519efa2b3659226b5"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow53.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 650,
+          "sha1": "a45317aa69dd241da108a3b7c6360bfbbed1ae01"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow54.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1253,
+          "sha1": "2e3b86881281abb0156a964b6c3b34f905943df9"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow55.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3190,
+          "sha1": "b0219d4434cb2126c49845363fd73505b8471dd5"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow56.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6296,
+          "sha1": "22b2fc4f48b5f1ef8938e7a2835ee7d5b325bc08"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow57.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3148,
+          "sha1": "69846751499314e07df67ac6b4364c4afe452a19"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow58.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 3413,
+          "sha1": "f3e31fee1a017da1eae944d03bdb504beff019bf"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow59.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2410,
+          "sha1": "1d19e337ef6706be2da0a887f558ffce55c7a9a0"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow6.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 2976,
+          "sha1": "8767dd2c5d842cda9aea22bd26a2af3978963306"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow60.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1960,
+          "sha1": "1bf99ca5072f18e9b61fb056a15c1a195c735f75"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow61.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1747,
+          "sha1": "3ebe4fcf6c4f8c1c15bad98bbdbc45d6195ff48a"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow62.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1555,
+          "sha1": "6e4ed35bb97eb5c013338caa588204e647275b85"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow63.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 185,
+          "sha1": "2a496b5b82a4ec5d7898e8fa5cfad65188e4aded"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow64.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4258,
+          "sha1": "c816b52add44b42afd734085f04cce2c1329c7ef"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow65.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1337,
+          "sha1": "da52c3803a95b5162922391f71a60405daac3e44"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow66.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1145,
+          "sha1": "b549eb1522f05aee44c5dc6ef2941649f363ff54"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow67.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1358,
+          "sha1": "7cd0e92679e7a89abf96c88d15e96bc25a2c1147"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow68.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 490,
+          "sha1": "ab15a9dddf13fee0a648406b2e9999bb3e3a2619"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow69.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1896,
+          "sha1": "c91b58b8d33289dcca091806c75ed35247f177b8"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow7.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 778,
+          "sha1": "b3fb7d9ae08908550d572d2c1c26680eaa8d9306"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow70.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 748,
+          "sha1": "c5f777c4712fb3da4ee7b043f9702a4b07509091"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow71.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 885,
+          "sha1": "bc5f17d75718128d1fc0cddb680bdd2bd6e518c9"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow72.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 4587,
+          "sha1": "c0ffab2ebf4ab79efbe24ddae931ea335bb6df84"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow73.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 963,
+          "sha1": "91aaf3c6dfed11b0bb42f4816e00f5867115518b"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow74.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1437,
+          "sha1": "7ed8eafa8465b9ec5f931f0fbeff728b3f34f8f0"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow8.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1507,
+          "sha1": "ba87bf0b6a74d507aaf8c72cac3d84ec77da3d09"
+        },
+        {
+          "path": "externals\/images\/scroll_top_buttons\/arrow9.png",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 6755,
+          "sha1": "30424404fabff327d856b94bfdd72bd68828fcad"
+        },
+        {
+          "path": "externals\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/scripts\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "externals\/styles",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "externals\/styles\/main.css",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 63,
+          "sha1": "e5ac918ed5a5f2b23b41860dc143c377ca87acf8"
+        },
+        {
+          "path": "Form",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Form\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "Model",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "Model\/DbTable\/.htempty",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 0,
+          "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+        },
+        {
+          "path": "settings",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "settings\/content.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 235,
+          "sha1": "5081f611e15a22b1f27e5d111eebb79b7dd2b403"
+        },
+        {
+          "path": "settings\/manifest.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 704,
+          "sha1": "f03477cb99f1fd98c80714cc4127f09910ad6827"
+        },
+        {
+          "path": "settings\/my.sql",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 510,
+          "sha1": "382fc507b431f690783f1cf3c3f0f1284740a1fe"
+        },
+        {
+          "path": "views",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/admin-manage\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1954,
+          "sha1": "6744049fbbb4f8e7ad12df23955c06877388e716"
+        },
+        {
+          "path": "views\/scripts\/index",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "views\/scripts\/index\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 84,
+          "sha1": "333d2afd5643a3105cba4fc8174af67788743734"
+        },
+        {
+          "path": "widgets",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/scrolltop",
+          "dir": true,
+          "file": false,
+          "perms": "0777",
+          "size": 0,
+          "sha1": null
+        },
+        {
+          "path": "widgets\/scrolltop\/Controller.php",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 304,
+          "sha1": "85028f95aede94ca39ae31aa2ed090607a3346de"
+        },
+        {
+          "path": "widgets\/scrolltop\/index.tpl",
+          "dir": false,
+          "file": true,
+          "perms": "0666",
+          "size": 1520,
+          "sha1": "5ce53c23c5c2730b1f22aefb4d65dec196d8f6ef"
+        }
+      ]
+    },
+    "application\/languages\/en\/scrolltotop.csv": {
+      "type": "file",
+      "path": "application\/languages\/en\/scrolltotop.csv",
+      "structure": {
+        "path": "scrolltotop.csv",
+        "dir": false,
+        "file": true,
+        "perms": "0666",
+        "size": 0,
+        "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+      }
+    }
+  }
+}

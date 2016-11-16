@@ -1,0 +1,453 @@
+/* Advanced Notification */
+li.seminimenu_notification, li.seminimenu_downservices
+{
+	overflow: visible!important;
+}
+li.seminimenu_notification
+{
+	min-width: 83px;
+	margin-right: -5px;
+	padding-left: 5px;
+}
+li.seminimenu_notification div.seminimenu_mini_wrapper
+{
+	float: left;
+	margin-right: -1px;
+}
+li.seminimenu_notification div.seminimenu_mini_wrapper a.seminimenu_NotifiIcon
+{
+	display: block;
+	position: relative;
+	background-image: url(~/application/modules/Seminimenu/externals/images/notification_inbox_updates.png);
+	background-repeat: no-repeat;
+	background-size: auto;	
+	height: 20px;
+	width: 25px;	
+	text-decoration: none;
+	margin: 0 1px;	
+}
+
+/* Messages icon */
+#seminimenu_MessagesUpdates a.seminimenu_NotifiIcon
+{
+	background-position: -50px -100px;
+}
+#seminimenu_MessagesUpdates a.seminimenu_NotifiIcon:hover, #seminimenu_MessagesUpdates a.seminimenu_NotifiIcon.notifyactive
+{
+	background-position: -50px -132px;
+}
+#seminimenu_MessagesUpdates.seminimenu_hasNotify a.seminimenu_NotifiIcon
+{
+	background-position: -75px -100px;
+}
+
+/* Friends Request icon */
+#seminimenu_FriendsRequestUpdates a.seminimenu_NotifiIcon
+{
+	background-position: 0px -68px;
+}
+#seminimenu_FriendsRequestUpdates a.seminimenu_NotifiIcon:hover, #seminimenu_FriendsRequestUpdates a.seminimenu_NotifiIcon.notifyactive
+{
+	background-position: -25px -132px;
+}
+#seminimenu_FriendsRequestUpdates.seminimenu_hasNotify a.seminimenu_NotifiIcon
+{
+	background-position: -25px -68px;
+}
+
+/* Notification icon */
+#seminimenu_NotificationsUpdates a.seminimenu_NotifiIcon
+{
+	background-position: -25px -100px;
+}
+#seminimenu_NotificationsUpdates a.seminimenu_NotifiIcon:hover, #seminimenu_NotificationsUpdates a.seminimenu_NotifiIcon.notifyactive
+{
+	background-position: -75px -132px;
+}
+#seminimenu_NotificationsUpdates.seminimenu_hasNotify a.seminimenu_NotifiIcon
+{
+	background-position: 0px -100px;
+}
+
+a.seminimenu_NotifiIcon .seminimenu_NotifiIconWrapper
+{
+	display: none;
+	border-radius: 2px;
+	color: #FFF;
+	font-size: 9px;
+	font-weight: bold;
+	overflow: hidden;
+	padding-bottom: 1px;
+	position: absolute;
+	right: 0px;
+	top: -5px;
+	z-index: 101;	
+}
+div.seminimenu_mini_wrapper .seminimenu_NotifiIconWrapper span
+{
+	background-color:#f03d25;
+	border:1px solid #d83722;
+	border-bottom:1px solid #c0311e;
+	border-top:1px solid #e23923;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius:0 \0;
+	-webkit-box-shadow: 0 1px 0px rgba(0,39,121,.77);
+	-moz-box-shadow: 0 1px 0px rgba(0,39,121,.77);
+	box-shadow: 0 1px 0px rgba(0,39,121,.77);
+	display:block;
+	padding:0 1px
+}
+div.seminimenu_hasNotify a.seminimenu_NotifiIcon .seminimenu_NotifiIconWrapper
+{
+	display: block;
+}
+div.seminimenuMini_dropdownbox, 
+ul.seminimenu_pulldownMainWrapper
+{
+	border: 1px solid #BDBDBD;
+	border-radius:0 \0;
+	-moz-background-clip: padding;
+	-webkit-background-clip: padding;
+	background-clip: padding-box;	
+	position: absolute;
+}
+div.seminimenuMini_dropdownbox
+{
+	-webkit-box-shadow: 0 2px 8px rgba(0,0,0,.3);
+	-moz-box-shadow: 0 2px 8px rgba(0,0,0,.3);
+	box-shadow: 0 2px 8px rgba(0,0,0,.3);	
+	width: 330px;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;	
+	background-color: #FCFCFC;	   
+    margin-top: 11px;	
+	z-index: 90;
+}
+#seminimenu_MessagesUpdates div.seminimenuMini_dropdownbox
+{
+	margin-left: -154px;
+}
+#seminimenu_FriendsRequestUpdates div.seminimenuMini_dropdownbox
+{
+	margin-left: -155px;
+}
+#seminimenu_NotificationsUpdates div.seminimenuMini_dropdownbox
+{
+	margin-left: -153px;
+}
+div.seminimenuMini_dropdownbox .seminimenu_dropdownContent > ul, div.seminimenuMini_dropdownbox .seminimenu_dropdownContent > ul li
+{
+	*display: none;
+}
+div.seminimenu_mini_wrapper span, div.seminimenuMini_dropdownbox h3, div.seminimenuMini_dropdownbox .seminimenu_dropdownHaveContent ul li, div.seminimenuMini_dropdownbox a, li.seminimenu_downservices .pulldown_contents_wrapper ul li, li.seminimenu_downservices .pulldown_contents_wrapper ul li a, div.seminimenu_dropdownNoContent
+{
+    height: auto;
+    line-height: normal;
+}
+div.seminimenuMini_dropdownbox a:hover, div.seminimenu_dropdownTitle a:link, .seminimenu_dropdownTitle a:visited
+{
+	color: $theme_link_color;	
+}
+div.seminimenuMini_dropdownbox a:hover
+{
+	text-decoration: underline;
+}
+div.seminimenuMini_dropdownbox div, div.seminimenuMini_dropdownbox h3, div.seminimenuMini_dropdownbox ul, div.seminimenuMini_dropdownbox td
+{
+	letter-spacing: 0;
+}
+div.seminimenu_dropdownArrow
+{
+	background-image: url(~/application/modules/Seminimenu/externals/images/dropdownArrow.png);
+	background-position: 0 1px;
+	background-position: 0px -15px\0;
+	*background-position: 0px -15px;
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: 11px;
+	position: absolute;
+	top: -11px;
+	left: 155px;
+	width: 21px;
+}
+@media all and (min-width:0) 
+{
+	div.seminimenu_dropdownArrow
+	{
+		background-position: 0 1px\0/;
+	}  /* IE9 */
+}
+div.seminimenu_dropdownTitle, .seminimenu_seeMore
+{
+	padding: 6px 8px;
+}
+div.seminimenu_dropdownTitle, .seminimenu_dropdownContent, .seminimenu_dropdownFooter
+{
+	clear: both;
+}
+div.seminimenu_dropdownTitle
+{
+	border-bottom: 1px solid #BFBFBF;
+	overflow: hidden;
+}
+div.seminimenu_dropdownTitle h3, div.seminimenu_dropdownTitle a, div.seminimenu_dropdownNoContent, a.seminimenu_seeMore, div.seminimenu_ContentlistInfo div, li.seminimenu_downservices .pulldown_contents ul > li
+{
+	font-size:11px;
+}
+div.seminimenu_dropdownTitle h3, div.seminimenu_dropdownTitle a, div.seminimenu_dropdownContent, ul.seminimenu_Contentlist
+{	
+	margin: 0!important;
+	padding: 0!important;		
+}
+ul.seminimenu_Contentlist > li, .seminimenu_seeMore
+{
+	margin: 0;
+}
+div.seminimenu_dropdownTitle h3, div.seminimenu_NameUser, div.seminimenu_NameUser > a:link, div.seminimenu_NameUser > a:visited
+{
+	color: #333333;
+}
+div.seminimenu_dropdownTitle h3
+{	
+	float: left;
+	text-transform: none;
+	border: 0;
+	background: none transparent;
+}
+div.seminimenu_dropdownTitle a:link, .seminimenu_dropdownTitle a:visited
+{
+	float: right;
+}
+div.seminimenu_dropdownNoContent, .seminimenu_seeMore
+{
+	text-align: center;
+}
+div.seminimenu_dropdownNoContent, .seminimenu_seeMore span, div.seminimenu_NameUser > a:link, div.seminimenu_NameUser > a:visited
+{
+	font-weight: 700;	
+}
+div.seminimenu_dropdownContent .seminimenu_MessDescription, div.seminimenu_dropdownContent .timestamp
+{
+	color: #808080;
+}
+div.seminimenu_dropdownNoContent
+{
+	padding: 8px;	
+}
+.seminimenu_seeMore
+{
+	display: block;
+	border-top: 1px solid #BFBFBF;	
+	background-color: #E4E4E4;
+}
+.seminimenu_dropdownHaveContent ul.seminimenu_Contentlist, .seminimenu_dropdownHaveContent ul.seminimenu_Contentlist > li, li.seminimenu_downservices .pulldown_contents_wrapper ul li
+{
+	float: none!important;
+}
+.seminimenu_dropdownHaveContent ul.seminimenu_Contentlist > li
+{
+	padding: 3px 0 1px 8px;
+	*margin-bottom: -3px;
+	overflow: hidden;	
+}
+.seminimenu_dropdownHaveContent ul.seminimenu_Contentlist > li + li
+{
+	border-top: 1px solid #BFBFBF;
+}
+.seminimenu_dropdownHaveContent ul.seminimenu_Contentlist > li:hover
+{
+	cursor: pointer;
+	background-color: #EFEFEF;
+}
+.seminimenu_dropdownHaveContent ul.seminimenu_Contentlist > li.seminimenu_Contentlist_unread
+{
+	background-color: #E9E9E9;
+}
+.seminimenu_dropdownHaveContent ul.seminimenu_Contentlist > li > a
+{
+	float: left;
+}
+div.seminimenu_ContentlistInfo
+{
+	margin-left: 50px;
+}
+div.seminimenu_ContentlistInfo div
+{
+	margin-left: 5px;
+	padding: 1px 5px 1px 0;
+}
+div.seminimenu_Friendsbutton
+{
+	margin-bottom: 2px;
+}
+div.seminimenu_Friendsbutton > button
+{
+	padding: 1px 5px;
+	*padding: 2px 1px 1px;
+	padding: 1px 5px 2px 5px\0;
+	font-weight: 700;
+	font-size: 11px;
+	*margin-right: 3px;
+	text-transform: none;
+}
+div.seminimenu_Friendsbutton > button.seminimenu_FriendsbuttonCancel
+{
+	filter:alpha(opacity=60);
+	-moz-opacity:.60;
+	opacity:.60;		
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+	filter: alpha(opacity=60);
+}
+div.seminimenu_ContentlistInfo div.seminimenu_postIcon
+{
+	background-repeat: no-repeat;
+	padding: 1px 0 3px 20px;
+	margin-top: 3px;
+}
+
+/* MyProfile avatar */
+li.seminimenu_MyProfile > a, li.seminimenu_MyProfile > span > a
+{
+	padding-bottom: 6px!important;
+	display: block;
+}
+li.seminimenu_MyProfile a div, li.seminimenu_MyProfile a div img
+{
+	height: 18px;
+	width: 18px;
+}
+li.seminimenu_MyProfile a div
+{
+	float: left;
+	margin-right: 5px;
+}
+li.seminimenu_MyProfile a div img
+{
+	vertical-align: middle;
+	border: 1px solid #DDD;
+	margin-top: -7px;
+	*margin-top: -5px;
+}
+
+/* Pulldown Adv.Menu Mini */
+li.seminimenu_downservices .updates_pulldown > a, li.seminimenu_downservices .updates_pulldown_active > a
+{
+	margin-left: 0;
+}
+li.seminimenu_downservices .updates_pulldown_active > a
+{
+	border-bottom-left-radius: 0!important;
+  border-bottom-right-radius: 0!important;
+}
+li.seminimenu_downservices .updates_pulldown_active .pulldown_contents_wrapper
+{
+	border-top-left-radius: 0!important;
+}
+li.seminimenu_downservices .updates_pulldown_active ul li a
+{
+	font-weight: 700;
+}
+
+
+/* Adv. Menu Main */
+li.seminimenu_downservicesMain, li.seminimenu_downservices
+{
+	*position: relative;
+	*z-index: 9;
+}
+li.seminimenu_downservicesMain > ul, li.seminimenu_downservices .pulldown_contents_wrapper
+{
+	*left: 0;
+}
+li.seminimenu_downservicesMain > a:link, 
+li.seminimenu_downservicesMain > a:visited,
+li.seminimenu_downservicesMain:hover > a:link, 
+li.seminimenu_downservicesMain:hover > a:visited
+{
+	background-repeat: no-repeat !important;
+	background-position: right center !important;
+	padding-right: 20px !important;
+}
+li.seminimenu_downservicesMain > a:link, 
+li.seminimenu_downservicesMain > a:visited
+{
+	background-image: url(~/application/modules/Seminimenu/externals/images/arrow2.png)!important;	
+}
+li.seminimenu_downservicesMain:hover > a:link, 
+li.seminimenu_downservicesMain:hover > a:visited
+{
+	background-image: url(~/application/modules/Seminimenu/externals/images/arrow2_active.png)!important;
+}
+li.seminimenu_downservicesMain:hover > a
+{
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+}
+li.seminimenu_downservicesMain:hover ul.seminimenu_pulldownMainWrapper
+{
+	display: block!important;
+}
+li.seminimenu_downservicesMain ul.seminimenu_pulldownMainWrapper
+{
+	display: none!important;
+}
+ul.seminimenu_pulldownMainWrapper
+{
+	display: none;
+    background-color: $theme_topbar_menu_background_color;
+	background-repeat: no-repeat;
+	border-top: 0;
+	-webkit-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.18);
+	-moz-box-shadow: 0 7px 8px rgba(0, 0, 0, 0.18);
+	box-shadow: 0 7px 8px rgba(0, 0, 0, 0.18);
+    border-radius: 0px 0px 5px 5px;
+    margin-left: -2px!important;
+	margin-top: 0!important;
+	padding: 0 !important;
+    max-width: 180px;
+    min-width: 150px;
+    overflow: hidden;
+    z-index: 9;
+}
+li.seminimenu_downservicesMain ul.seminimenu_pulldownMainWrapper > li, 
+li.seminimenu_downservicesMain ul.seminimenu_pulldownMainWrapper > li a
+{
+    height: auto;
+    line-height: normal;
+	*line-height: 15px;
+	margin: 0;
+	white-space: normal;
+	font-size: 13px;
+	display: block;
+}
+li.seminimenu_downservicesMain ul.seminimenu_pulldownMainWrapper > li
+{
+    background: none transparent !important;
+    border: 0 none !important;
+    float: none !important;
+    padding-bottom: 0;
+    padding-top: 0;	
+}
+li.seminimenu_downservicesMain ul.seminimenu_pulldownMainWrapper > li + li
+{
+    border-top: 1px solid #BFBFBF !important;
+}
+li.seminimenu_downservicesMain ul.seminimenu_pulldownMainWrapper > li a
+{
+    padding-bottom: 4px;
+    padding-top: 4px;
+	padding-left: 8px!important;
+	border-radius: 0;
+}
+li.seminimenu_downservicesMain ul.seminimenu_pulldownMainWrapper > li a:hover 
+{
+	color: $theme_topbar_menu_link_hover_color;
+}
+ul.notifications_menu
+{
+	overflow: hidden;
+	float: none!important;
+}

@@ -1,0 +1,14 @@
+.notification_item_general
+{
+	display: block;
+	padding-left: 22px;
+	background-repeat: no-repeat;
+}
+
+.notification_type_post_user {
+	background-image: url(/application/modules/Core/externals/images/types/post.png?c=124);
+}
+
+.notification_type_liked, .notification_type_liked_commented {
+	background-image: url(/application/modules/Activity/externals/images/activity/like.png?c=124);
+}

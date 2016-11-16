@@ -1,0 +1,22 @@
+
+
+
+
+.layout_core_menu_main
+{
+padding: 0px 0px !important;
+}
+
+.layout_core_menu_main > ul.navigation
+{
+background: url("http://www.visitsunshinecoast.com.au/images/rough-mask.png") repeat-x bottom center;
+padding: 0 0 17px 0;
+height: 57px;
+}
+
+.layout_core_menu_main > ul.navigation li:first-child
+{
+margin-left: 10px;
+}
+
+
