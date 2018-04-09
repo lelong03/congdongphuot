@@ -4,8 +4,8 @@
   array (
     'host' => 'localhost',
     'username' => 'root',
-    'password' => 'FAYP4FrfqxRtefsP',
-    'dbname' => 'congdongphuot',
+    'password' => '',
+    'dbname' => '',
     'charset' => 'UTF8',
     'adapterNamespace' => 'Zend_Db_Adapter',
   ),
